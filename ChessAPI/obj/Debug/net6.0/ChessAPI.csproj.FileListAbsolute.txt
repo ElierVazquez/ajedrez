@@ -1,0 +1,135 @@
+/home/carlos/Escritorio/2324/DWS/PRACTICAS/Pr3/ChessAPI/bin/Debug/net6.0/appsettings.Development.json
+/home/carlos/Escritorio/2324/DWS/PRACTICAS/Pr3/ChessAPI/bin/Debug/net6.0/appsettings.json
+/home/carlos/Escritorio/2324/DWS/PRACTICAS/Pr3/ChessAPI/bin/Debug/net6.0/ChessAPI
+/home/carlos/Escritorio/2324/DWS/PRACTICAS/Pr3/ChessAPI/bin/Debug/net6.0/ChessAPI.deps.json
+/home/carlos/Escritorio/2324/DWS/PRACTICAS/Pr3/ChessAPI/bin/Debug/net6.0/ChessAPI.runtimeconfig.json
+/home/carlos/Escritorio/2324/DWS/PRACTICAS/Pr3/ChessAPI/bin/Debug/net6.0/ChessAPI.dll
+/home/carlos/Escritorio/2324/DWS/PRACTICAS/Pr3/ChessAPI/bin/Debug/net6.0/ref/ChessAPI.dll
+/home/carlos/Escritorio/2324/DWS/PRACTICAS/Pr3/ChessAPI/bin/Debug/net6.0/ChessAPI.pdb
+/home/carlos/Escritorio/2324/DWS/PRACTICAS/Pr3/ChessAPI/bin/Debug/net6.0/Microsoft.OpenApi.dll
+/home/carlos/Escritorio/2324/DWS/PRACTICAS/Pr3/ChessAPI/bin/Debug/net6.0/Swashbuckle.AspNetCore.Swagger.dll
+/home/carlos/Escritorio/2324/DWS/PRACTICAS/Pr3/ChessAPI/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/home/carlos/Escritorio/2324/DWS/PRACTICAS/Pr3/ChessAPI/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/home/carlos/Escritorio/2324/DWS/PRACTICAS/Pr3/ChessAPI/obj/Debug/net6.0/ChessAPI.csproj.AssemblyReference.cache
+/home/carlos/Escritorio/2324/DWS/PRACTICAS/Pr3/ChessAPI/obj/Debug/net6.0/ChessAPI.GeneratedMSBuildEditorConfig.editorconfig
+/home/carlos/Escritorio/2324/DWS/PRACTICAS/Pr3/ChessAPI/obj/Debug/net6.0/ChessAPI.AssemblyInfoInputs.cache
+/home/carlos/Escritorio/2324/DWS/PRACTICAS/Pr3/ChessAPI/obj/Debug/net6.0/ChessAPI.AssemblyInfo.cs
+/home/carlos/Escritorio/2324/DWS/PRACTICAS/Pr3/ChessAPI/obj/Debug/net6.0/ChessAPI.csproj.CoreCompileInputs.cache
+/home/carlos/Escritorio/2324/DWS/PRACTICAS/Pr3/ChessAPI/obj/Debug/net6.0/ChessAPI.MvcApplicationPartsAssemblyInfo.cs
+/home/carlos/Escritorio/2324/DWS/PRACTICAS/Pr3/ChessAPI/obj/Debug/net6.0/ChessAPI.MvcApplicationPartsAssemblyInfo.cache
+/home/carlos/Escritorio/2324/DWS/PRACTICAS/Pr3/ChessAPI/obj/Debug/net6.0/staticwebassets.build.json
+/home/carlos/Escritorio/2324/DWS/PRACTICAS/Pr3/ChessAPI/obj/Debug/net6.0/staticwebassets.development.json
+/home/carlos/Escritorio/2324/DWS/PRACTICAS/Pr3/ChessAPI/obj/Debug/net6.0/scopedcss/bundle/ChessAPI.styles.css
+/home/carlos/Escritorio/2324/DWS/PRACTICAS/Pr3/ChessAPI/obj/Debug/net6.0/ChessAPI.csproj.CopyComplete
+/home/carlos/Escritorio/2324/DWS/PRACTICAS/Pr3/ChessAPI/obj/Debug/net6.0/ChessAPI.dll
+/home/carlos/Escritorio/2324/DWS/PRACTICAS/Pr3/ChessAPI/obj/Debug/net6.0/ref/ChessAPI.dll
+/home/carlos/Escritorio/2324/DWS/PRACTICAS/Pr3/ChessAPI/obj/Debug/net6.0/ChessAPI.pdb
+/home/carlos/Escritorio/2324/DWS/PRACTICAS/Pr3/ChessAPI/obj/Debug/net6.0/ChessAPI.genruntimeconfig.cache
+/home/carlos/Escritorio/WebAPIS/ChessAPI/obj/Debug/net6.0/ChessAPI.csproj.AssemblyReference.cache
+/home/carlos/Escritorio/WebAPIS/ChessAPI/obj/Debug/net6.0/ChessAPI.GeneratedMSBuildEditorConfig.editorconfig
+/home/carlos/Escritorio/WebAPIS/ChessAPI/obj/Debug/net6.0/ChessAPI.AssemblyInfoInputs.cache
+/home/carlos/Escritorio/WebAPIS/ChessAPI/obj/Debug/net6.0/ChessAPI.AssemblyInfo.cs
+/home/carlos/Escritorio/WebAPIS/ChessAPI/obj/Debug/net6.0/ChessAPI.csproj.CoreCompileInputs.cache
+/home/carlos/Escritorio/WebAPIS/ChessAPI/obj/Debug/net6.0/ChessAPI.MvcApplicationPartsAssemblyInfo.cs
+/home/carlos/Escritorio/WebAPIS/ChessAPI/obj/Debug/net6.0/ChessAPI.MvcApplicationPartsAssemblyInfo.cache
+/home/carlos/Escritorio/WebAPIS/ChessAPI/obj/Debug/net6.0/ChessAPI.dll
+/home/carlos/Escritorio/WebAPIS/ChessAPI/obj/Debug/net6.0/ref/ChessAPI.dll
+/home/carlos/Escritorio/WebAPIS/ChessAPI/obj/Debug/net6.0/ChessAPI.pdb
+/home/carlos/Escritorio/WebAPIS/ChessAPI/bin/Debug/net6.0/appsettings.Development.json
+/home/carlos/Escritorio/WebAPIS/ChessAPI/bin/Debug/net6.0/appsettings.json
+/home/carlos/Escritorio/WebAPIS/ChessAPI/bin/Debug/net6.0/ChessAPI
+/home/carlos/Escritorio/WebAPIS/ChessAPI/bin/Debug/net6.0/ChessAPI.deps.json
+/home/carlos/Escritorio/WebAPIS/ChessAPI/bin/Debug/net6.0/ChessAPI.runtimeconfig.json
+/home/carlos/Escritorio/WebAPIS/ChessAPI/bin/Debug/net6.0/ChessAPI.dll
+/home/carlos/Escritorio/WebAPIS/ChessAPI/bin/Debug/net6.0/ref/ChessAPI.dll
+/home/carlos/Escritorio/WebAPIS/ChessAPI/bin/Debug/net6.0/ChessAPI.pdb
+/home/carlos/Escritorio/WebAPIS/ChessAPI/bin/Debug/net6.0/Microsoft.OpenApi.dll
+/home/carlos/Escritorio/WebAPIS/ChessAPI/bin/Debug/net6.0/Swashbuckle.AspNetCore.Swagger.dll
+/home/carlos/Escritorio/WebAPIS/ChessAPI/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/home/carlos/Escritorio/WebAPIS/ChessAPI/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/home/carlos/Escritorio/WebAPIS/ChessAPI/obj/Debug/net6.0/staticwebassets.build.json
+/home/carlos/Escritorio/WebAPIS/ChessAPI/obj/Debug/net6.0/staticwebassets.development.json
+/home/carlos/Escritorio/WebAPIS/ChessAPI/obj/Debug/net6.0/scopedcss/bundle/ChessAPI.styles.css
+/home/carlos/Escritorio/WebAPIS/ChessAPI/obj/Debug/net6.0/ChessAPI.csproj.CopyComplete
+/home/carlos/Escritorio/WebAPIS/ChessAPI/obj/Debug/net6.0/ChessAPI.genruntimeconfig.cache
+E:/2--DAW/DWS/UD4/Practica_3/ChessAPI/bin/Debug/net6.0/appsettings.Development.json
+E:/2--DAW/DWS/UD4/Practica_3/ChessAPI/bin/Debug/net6.0/appsettings.json
+E:/2--DAW/DWS/UD4/Practica_3/ChessAPI/bin/Debug/net6.0/ChessAPI.exe
+E:/2--DAW/DWS/UD4/Practica_3/ChessAPI/bin/Debug/net6.0/ChessAPI.deps.json
+E:/2--DAW/DWS/UD4/Practica_3/ChessAPI/bin/Debug/net6.0/ChessAPI.runtimeconfig.json
+E:/2--DAW/DWS/UD4/Practica_3/ChessAPI/bin/Debug/net6.0/ChessAPI.dll
+E:/2--DAW/DWS/UD4/Practica_3/ChessAPI/bin/Debug/net6.0/ChessAPI.pdb
+E:/2--DAW/DWS/UD4/Practica_3/ChessAPI/bin/Debug/net6.0/Microsoft.OpenApi.dll
+E:/2--DAW/DWS/UD4/Practica_3/ChessAPI/bin/Debug/net6.0/Swashbuckle.AspNetCore.Swagger.dll
+E:/2--DAW/DWS/UD4/Practica_3/ChessAPI/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+E:/2--DAW/DWS/UD4/Practica_3/ChessAPI/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+E:/2--DAW/DWS/UD4/Practica_3/ChessAPI/obj/Debug/net6.0/ChessAPI.csproj.AssemblyReference.cache
+E:/2--DAW/DWS/UD4/Practica_3/ChessAPI/obj/Debug/net6.0/ChessAPI.GeneratedMSBuildEditorConfig.editorconfig
+E:/2--DAW/DWS/UD4/Practica_3/ChessAPI/obj/Debug/net6.0/ChessAPI.AssemblyInfoInputs.cache
+E:/2--DAW/DWS/UD4/Practica_3/ChessAPI/obj/Debug/net6.0/ChessAPI.AssemblyInfo.cs
+E:/2--DAW/DWS/UD4/Practica_3/ChessAPI/obj/Debug/net6.0/ChessAPI.csproj.CoreCompileInputs.cache
+E:/2--DAW/DWS/UD4/Practica_3/ChessAPI/obj/Debug/net6.0/ChessAPI.MvcApplicationPartsAssemblyInfo.cs
+E:/2--DAW/DWS/UD4/Practica_3/ChessAPI/obj/Debug/net6.0/ChessAPI.MvcApplicationPartsAssemblyInfo.cache
+E:/2--DAW/DWS/UD4/Practica_3/ChessAPI/obj/Debug/net6.0/staticwebassets.build.json
+E:/2--DAW/DWS/UD4/Practica_3/ChessAPI/obj/Debug/net6.0/staticwebassets.development.json
+E:/2--DAW/DWS/UD4/Practica_3/ChessAPI/obj/Debug/net6.0/scopedcss/bundle/ChessAPI.styles.css
+E:/2--DAW/DWS/UD4/Practica_3/ChessAPI/obj/Debug/net6.0/ChessAPI.csproj.CopyComplete
+E:/2--DAW/DWS/UD4/Practica_3/ChessAPI/obj/Debug/net6.0/ChessAPI.dll
+E:/2--DAW/DWS/UD4/Practica_3/ChessAPI/obj/Debug/net6.0/refint/ChessAPI.dll
+E:/2--DAW/DWS/UD4/Practica_3/ChessAPI/obj/Debug/net6.0/ChessAPI.pdb
+E:/2--DAW/DWS/UD4/Practica_3/ChessAPI/obj/Debug/net6.0/ChessAPI.genruntimeconfig.cache
+E:/2--DAW/DWS/UD4/Practica_3/ChessAPI/obj/Debug/net6.0/ref/ChessAPI.dll
+/home/horabaixa/Escriptori/2º DAW/DWS/UD4/Practica_3/ChessAPI/bin/Debug/net6.0/appsettings.Development.json
+/home/horabaixa/Escriptori/2º DAW/DWS/UD4/Practica_3/ChessAPI/bin/Debug/net6.0/appsettings.json
+/home/horabaixa/Escriptori/2º DAW/DWS/UD4/Practica_3/ChessAPI/bin/Debug/net6.0/ChessAPI
+/home/horabaixa/Escriptori/2º DAW/DWS/UD4/Practica_3/ChessAPI/bin/Debug/net6.0/ChessAPI.deps.json
+/home/horabaixa/Escriptori/2º DAW/DWS/UD4/Practica_3/ChessAPI/bin/Debug/net6.0/ChessAPI.runtimeconfig.json
+/home/horabaixa/Escriptori/2º DAW/DWS/UD4/Practica_3/ChessAPI/bin/Debug/net6.0/ChessAPI.dll
+/home/horabaixa/Escriptori/2º DAW/DWS/UD4/Practica_3/ChessAPI/bin/Debug/net6.0/ref/ChessAPI.dll
+/home/horabaixa/Escriptori/2º DAW/DWS/UD4/Practica_3/ChessAPI/bin/Debug/net6.0/ChessAPI.pdb
+/home/horabaixa/Escriptori/2º DAW/DWS/UD4/Practica_3/ChessAPI/bin/Debug/net6.0/Microsoft.OpenApi.dll
+/home/horabaixa/Escriptori/2º DAW/DWS/UD4/Practica_3/ChessAPI/bin/Debug/net6.0/Swashbuckle.AspNetCore.Swagger.dll
+/home/horabaixa/Escriptori/2º DAW/DWS/UD4/Practica_3/ChessAPI/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/home/horabaixa/Escriptori/2º DAW/DWS/UD4/Practica_3/ChessAPI/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/home/horabaixa/Escriptori/2º DAW/DWS/UD4/Practica_3/ChessAPI/obj/Debug/net6.0/ChessAPI.csproj.AssemblyReference.cache
+/home/horabaixa/Escriptori/2º DAW/DWS/UD4/Practica_3/ChessAPI/obj/Debug/net6.0/ChessAPI.GeneratedMSBuildEditorConfig.editorconfig
+/home/horabaixa/Escriptori/2º DAW/DWS/UD4/Practica_3/ChessAPI/obj/Debug/net6.0/ChessAPI.AssemblyInfoInputs.cache
+/home/horabaixa/Escriptori/2º DAW/DWS/UD4/Practica_3/ChessAPI/obj/Debug/net6.0/ChessAPI.AssemblyInfo.cs
+/home/horabaixa/Escriptori/2º DAW/DWS/UD4/Practica_3/ChessAPI/obj/Debug/net6.0/ChessAPI.csproj.CoreCompileInputs.cache
+/home/horabaixa/Escriptori/2º DAW/DWS/UD4/Practica_3/ChessAPI/obj/Debug/net6.0/ChessAPI.MvcApplicationPartsAssemblyInfo.cs
+/home/horabaixa/Escriptori/2º DAW/DWS/UD4/Practica_3/ChessAPI/obj/Debug/net6.0/ChessAPI.MvcApplicationPartsAssemblyInfo.cache
+/home/horabaixa/Escriptori/2º DAW/DWS/UD4/Practica_3/ChessAPI/obj/Debug/net6.0/staticwebassets.build.json
+/home/horabaixa/Escriptori/2º DAW/DWS/UD4/Practica_3/ChessAPI/obj/Debug/net6.0/staticwebassets.development.json
+/home/horabaixa/Escriptori/2º DAW/DWS/UD4/Practica_3/ChessAPI/obj/Debug/net6.0/scopedcss/bundle/ChessAPI.styles.css
+/home/horabaixa/Escriptori/2º DAW/DWS/UD4/Practica_3/ChessAPI/obj/Debug/net6.0/ChessAPI.csproj.CopyComplete
+/home/horabaixa/Escriptori/2º DAW/DWS/UD4/Practica_3/ChessAPI/obj/Debug/net6.0/ChessAPI.dll
+/home/horabaixa/Escriptori/2º DAW/DWS/UD4/Practica_3/ChessAPI/obj/Debug/net6.0/ref/ChessAPI.dll
+/home/horabaixa/Escriptori/2º DAW/DWS/UD4/Practica_3/ChessAPI/obj/Debug/net6.0/ChessAPI.pdb
+/home/horabaixa/Escriptori/2º DAW/DWS/UD4/Practica_3/ChessAPI/obj/Debug/net6.0/ChessAPI.genruntimeconfig.cache
+E:\wamp64\www\ajedrez\ChessAPI\bin\Debug\net6.0\appsettings.Development.json
+E:\wamp64\www\ajedrez\ChessAPI\bin\Debug\net6.0\appsettings.json
+E:\wamp64\www\ajedrez\ChessAPI\bin\Debug\net6.0\ChessAPI.exe
+E:\wamp64\www\ajedrez\ChessAPI\bin\Debug\net6.0\ChessAPI.deps.json
+E:\wamp64\www\ajedrez\ChessAPI\bin\Debug\net6.0\ChessAPI.runtimeconfig.json
+E:\wamp64\www\ajedrez\ChessAPI\bin\Debug\net6.0\ChessAPI.dll
+E:\wamp64\www\ajedrez\ChessAPI\bin\Debug\net6.0\ChessAPI.pdb
+E:\wamp64\www\ajedrez\ChessAPI\bin\Debug\net6.0\Microsoft.OpenApi.dll
+E:\wamp64\www\ajedrez\ChessAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+E:\wamp64\www\ajedrez\ChessAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+E:\wamp64\www\ajedrez\ChessAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+E:\wamp64\www\ajedrez\ChessAPI\obj\Debug\net6.0\ChessAPI.csproj.AssemblyReference.cache
+E:\wamp64\www\ajedrez\ChessAPI\obj\Debug\net6.0\ChessAPI.GeneratedMSBuildEditorConfig.editorconfig
+E:\wamp64\www\ajedrez\ChessAPI\obj\Debug\net6.0\ChessAPI.AssemblyInfoInputs.cache
+E:\wamp64\www\ajedrez\ChessAPI\obj\Debug\net6.0\ChessAPI.AssemblyInfo.cs
+E:\wamp64\www\ajedrez\ChessAPI\obj\Debug\net6.0\ChessAPI.csproj.CoreCompileInputs.cache
+E:\wamp64\www\ajedrez\ChessAPI\obj\Debug\net6.0\ChessAPI.MvcApplicationPartsAssemblyInfo.cs
+E:\wamp64\www\ajedrez\ChessAPI\obj\Debug\net6.0\ChessAPI.MvcApplicationPartsAssemblyInfo.cache
+E:\wamp64\www\ajedrez\ChessAPI\obj\Debug\net6.0\staticwebassets.build.json
+E:\wamp64\www\ajedrez\ChessAPI\obj\Debug\net6.0\staticwebassets.development.json
+E:\wamp64\www\ajedrez\ChessAPI\obj\Debug\net6.0\scopedcss\bundle\ChessAPI.styles.css
+E:\wamp64\www\ajedrez\ChessAPI\obj\Debug\net6.0\ChessAPI.csproj.CopyComplete
+E:\wamp64\www\ajedrez\ChessAPI\obj\Debug\net6.0\ChessAPI.dll
+E:\wamp64\www\ajedrez\ChessAPI\obj\Debug\net6.0\refint\ChessAPI.dll
+E:\wamp64\www\ajedrez\ChessAPI\obj\Debug\net6.0\ChessAPI.pdb
+E:\wamp64\www\ajedrez\ChessAPI\obj\Debug\net6.0\ChessAPI.genruntimeconfig.cache
+E:\wamp64\www\ajedrez\ChessAPI\obj\Debug\net6.0\ref\ChessAPI.dll
