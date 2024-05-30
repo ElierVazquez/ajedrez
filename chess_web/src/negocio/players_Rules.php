@@ -40,4 +40,19 @@
 
             return $playersList;
         }
+
+        function toGetNames($whId, $blId)
+        {
+            $playersDAL = new Players_DataAccess();
+            $rs = $playersDAL->getName($whId);
+            $playersList = array();
+            foreach ($rs as $player)
+            {
+                $playersRules = new Players_Rules();
+                $playersRules->init($player["ID"], $player["name"]);
+                array_push($playersList, $playersRules);
+            }
+
+            return $playersList;
+        }
     }

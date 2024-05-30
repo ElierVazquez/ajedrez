@@ -536,3 +536,27 @@ thead {
     color: burlywood;
     margin-bottom: 1vh;
 }
+
+#game_info {
+    background-color: #333333cc;
+    width: 20vw;
+    height: 20vh;
+    left: 1vw;
+    top: 15vh;
+    position: absolute;
+    border-radius: 1vw;
+    text-align: center;
+}
+
+#game_info h3 {
+    color: burlywood;
+    margin-top: 1vh;
+}
+
+#game_info p {
+    color: bisque;
+}
+
+#game_info b {
+    color: burlywood;
+}

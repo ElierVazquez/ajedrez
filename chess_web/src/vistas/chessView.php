@@ -43,6 +43,40 @@
         </ul>
     </div>
     <?php
+        require("../negocio/players_Rules.php");
+
+        if (!isset($_SESSION["playerWH"]) || !isset($_SESSION["playerBL"])) 
+        {
+            $player = new Players_Rules();
+            $playersInfo = $player->toGet();
+    
+            $playerWHid = $_SESSION["whitePlayer"]==null ? $_POST["whitePlayer"] : $_SESSION["whitePlayer"];
+            $playerBLid = $_SESSION["blackPlayer"]==null ? $_POST["blackPlayer"] : $_SESSION["blackPlayer"];
+    
+            foreach ($playersInfo as $player)
+            {
+                if ($player->getID() == $playerWHid)
+                {
+                    $_SESSION["playerWH"] = $player->getName();
+                }
+    
+                if ($player->getID() == $playerBLid)
+                {
+                    $_SESSION["playerBL"] = $player->getName();
+                }
+            }
+        }
+    ?>
+    <div id="game_info">
+        <h3>
+            <?php
+                print($_POST["title"]);
+            ?>
+        </h3>
+
+        <p><b>Turn of </b><?php print($_SESSION["playerWH"]); ?></p>
+    </div>
+    <?php
 
         require("../negocio/api_Rules.php");
         require("../negocio/matches_Rules.php");
