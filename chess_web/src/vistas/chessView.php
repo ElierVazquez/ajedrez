@@ -44,40 +44,6 @@
     </div>
     <?php
         require("../negocio/players_Rules.php");
-
-        if (!isset($_SESSION["playerWH"]) || !isset($_SESSION["playerBL"])) 
-        {
-            $player = new Players_Rules();
-            $playersInfo = $player->toGet();
-    
-            $playerWHid = $_SESSION["whitePlayer"]==null ? $_POST["whitePlayer"] : $_SESSION["whitePlayer"];
-            $playerBLid = $_SESSION["blackPlayer"]==null ? $_POST["blackPlayer"] : $_SESSION["blackPlayer"];
-    
-            foreach ($playersInfo as $player)
-            {
-                if ($player->getID() == $playerWHid)
-                {
-                    $_SESSION["playerWH"] = $player->getName();
-                }
-    
-                if ($player->getID() == $playerBLid)
-                {
-                    $_SESSION["playerBL"] = $player->getName();
-                }
-            }
-        }
-    ?>
-    <div id="game_info">
-        <h3>
-            <?php
-                print($_POST["title"]);
-            ?>
-        </h3>
-
-        <p><b>Turn of </b><?php print($_SESSION["playerWH"]); ?></p>
-    </div>
-    <?php
-
         require("../negocio/api_Rules.php");
         require("../negocio/matches_Rules.php");
         require("../negocio/boardStatus_Rules.php");
@@ -96,6 +62,25 @@
             $board = "ROBL,KNBL,BIBL,QUBL,KIBL,BIBL,KNBL,ROBL_PABL,PABL,PABL,PABL,PABL,PABL,PABL,PABL_0,0,0,0,0,0,0,0_0,0,0,0,0,0,0,0_0,0,0,0,0,0,0,0_0,0,0,0,0,0,0,0_PAWH,PAWH,PAWH,PAWH,PAWH,PAWH,PAWH,PAWH_ROWH,KNWH,BIWH,QUWH,KIWH,BIWH,KNWH,ROWH";
             $matchesBL->toSet($_SESSION["title"], $_SESSION["whitePlayer"], $_SESSION["blackPlayer"]);
             $boardStatusBL->toSet($board, $_SESSION['turn']);
+
+            $player = new Players_Rules();
+            $playersInfo = $player->toGet();
+    
+            $playerWHid = $_SESSION["whitePlayer"]==null ? $_POST["whitePlayer"] : $_SESSION["whitePlayer"];
+            $playerBLid = $_SESSION["blackPlayer"]==null ? $_POST["blackPlayer"] : $_SESSION["blackPlayer"];
+    
+            foreach ($playersInfo as $player)
+            {
+                if ($player->getID() == $playerWHid)
+                {
+                    $_SESSION["playerWH"] = $player->getName();
+                }
+    
+                if ($player->getID() == $playerBLid)
+                {
+                    $_SESSION["playerBL"] = $player->getName();
+                }
+            }
         }
         else
         {
@@ -378,8 +363,6 @@
 
         function toMove($board)
         {
-            $_SESSION["turn"] = $_SESSION["turn"] + 1;
-
             $fromColumn = $_POST['fromColumn'];
             $fromRow = $_POST['fromRow'];
             $toColumn = $_POST['toColumn'];
@@ -390,10 +373,11 @@
 
             try
             {
-                $move = $apiBL->toMove($board, $fromColumn, $fromRow, $toColumn, $toRow); 
-
+                $move = $apiBL->toMove($board, $fromColumn, $fromRow, $toColumn, $toRow, $_SESSION["turn"]+1); 
+                
                 if ($move["valid"] == true)
                 {
+                    $_SESSION["turn"] = $_SESSION["turn"] + 1;
                     $boardStatusBL->toSet($move["board"], $_SESSION["turn"]);
                     $board = $move["board"];
                     
@@ -409,6 +393,26 @@
             return $board;
         }
     ?>
+    <div id="game_info">
+        <h3>
+            <?php
+                print($_SESSION["title"]);
+            ?>
+        </h3>
+        <p>
+            <b>Turn of </b>
+            <?php
+                if ($_SESSION["turn"] % 2 == 0) 
+                {
+                    print($_SESSION["playerWH"]);
+                }
+                else
+                {
+                    print($_SESSION["playerBL"]);
+                }
+            ?>
+        </p>
+    </div>
     <?php
         if (isset($error))
         {

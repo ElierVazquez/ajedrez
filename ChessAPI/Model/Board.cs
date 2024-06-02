@@ -152,10 +152,19 @@ namespace ChessAPI.Model
 
         }
 
-        public Move ValidateMove(int fromColumn, int fromRow, int toColumn, int toRow)
+        public Move ValidateMove(int fromColumn, int fromRow, int toColumn, int toRow, int turn)
         {
             Movement move = new Movement(fromColumn, fromRow, toColumn, toRow);
             Piece piece = _boardPieces[fromRow, fromColumn];
+
+            if (turn % 2 != 0 && piece._color == Piece.ColorEnum.BLACK)
+            {
+                return new Move(false, GetBoardState(), "Invalid Movement");
+            }
+            else if (turn % 2 == 0 && piece._color == Piece.ColorEnum.WHITE)
+            {
+                return new Move(false, GetBoardState(), "Invalid Movement");
+            }
 
             try
             {

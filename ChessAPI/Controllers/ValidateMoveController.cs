@@ -15,14 +15,14 @@ public class ValidateMoveController : ControllerBase
     }
 
     [HttpGet]
-    public IActionResult Get(string board, int fromColumn, int fromRow, int toColumn, int toRow)
+    public IActionResult Get(string board, int fromColumn, int fromRow, int toColumn, int toRow, int turn)
     {
         try
         {
             if (string.IsNullOrEmpty(board))
                 return BadRequest("board no puede ser IsNullOrEmpty");
 
-            var response = _boardService.ValidateMove(board, fromColumn, toColumn, fromRow, toRow);
+            var response = _boardService.ValidateMove(board, fromColumn, toColumn, fromRow, toRow, turn);
             return Ok(response);
         }   
         catch (Exception ex)
