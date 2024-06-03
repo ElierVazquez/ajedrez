@@ -14,7 +14,12 @@ namespace ChessAPI.Model
 
         public override MovementType ValidateSpecificRulesForMovement(Movement movement, Piece[,] board)
         {
-            return MovementType.ValidNormalMovement;
+            if (Math.Abs(movement.toRow-movement.fromRow) == 1)
+            {
+                return MovementType.ValidNormalMovement;
+            }
+
+            return MovementType.InvalidNormalMovement;
         }
     }
 }

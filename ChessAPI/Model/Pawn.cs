@@ -2,11 +2,8 @@ namespace ChessAPI.Model
 {
     public class Pawn : Piece
     {
-        public bool _firstMove;
-
-        public Pawn(ColorEnum color, bool firstMove) : base(color)
+        public Pawn(ColorEnum color) : base(color)
         {
-            _firstMove = firstMove;
         }
 
         public override int GetScore()
@@ -16,31 +13,77 @@ namespace ChessAPI.Model
 
         public override MovementType ValidateSpecificRulesForMovement(Movement movement, Piece[,] board)
         {
-            
-            if (_color == Piece.ColorEnum.WHITE)
+            bool baseMovement = BaseMovement(movement, board);
+            if (baseMovement)
+                return MovementType.ValidNormalMovement;
+
+            bool kill = Kill(movement, board);
+
+            if (kill)
+                return MovementType.ValidNormalMovement;
+
+
+            bool initialMovement = InitialMovement(movement, board);
+
+            if (initialMovement)
+                return MovementType.ValidNormalMovement;
+
+            return MovementType.InvalidNormalMovement;
+        }
+
+        public bool BaseMovement(Movement movement, Piece[,] board)
+        {
+            bool result = false;
+
+            if ((movement.RowDistance()==1) && 
+                (movement.IsSameColumn()) && board[movement.toRow,movement.toColumn]==null)
             {
-                if (_firstMove && (movement.toRow-movement.fromRow) == -2)
-                {
-                    return MovementType.ValidNormalMovement;
-                }
-                else if ((movement.toRow-movement.fromRow) == -1)
-                {
-                    return MovementType.ValidNormalMovement;
-                }
+                if (this._color==ColorEnum.WHITE)
+                    result = movement.toRow < movement.fromRow;
+                else
+                    result = movement.toRow > movement.fromRow;
             }
-            else if (_color == Piece.ColorEnum.BLACK)
+
+            return result;
+
+        }
+        public bool Kill(Movement movement, Piece[,] board)
+        {
+            bool result = false;
+            int columnFactor = movement.fromColumn - movement.toColumn;
+            
+            if (board[movement.toRow, movement.toColumn] != null)
             {
-                if (_firstMove && (movement.toRow-movement.fromRow) == 2)
+                if ((movement.RowDistance() == 1) && (Math.Abs(columnFactor) == 1))
                 {
-                    return MovementType.ValidNormalMovement;
-                }
-                else if ((movement.toRow-movement.fromRow) == 1)
-                {
-                    return MovementType.ValidNormalMovement;
+                    if (this._color == ColorEnum.WHITE)
+                        result = movement.toRow < movement.fromRow;
+                    else
+                        result = movement.toRow > movement.fromRow;
                 }
             }
 
-            return MovementType.InvalidNormalMovement;
+            return result;
+        }
+
+        public bool InitialMovement(Movement movement, Piece[,] board)
+        {
+            bool result = false;
+
+            if ((board[movement.toRow,movement.toColumn]==null) &&
+                (movement.RowDistance() == 2) && 
+                (movement.IsSameColumn()) &&
+                ((movement.fromRow==1) || (movement.fromRow==6))
+                )
+            {
+                if (this._color == ColorEnum.WHITE)
+                    result = board[5, movement.toColumn] == null;
+                else
+                    result = board[2, movement.toColumn] == null;
+  
+            }
+
+            return result;
         }
     }
 }

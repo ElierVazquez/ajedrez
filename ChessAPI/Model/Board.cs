@@ -70,25 +70,11 @@ namespace ChessAPI.Model
                     }
                     else if (pieces[contList] == "PABL")
                     {
-                        if (row == 1)
-                        {
-                            _boardPieces[row, col] = new Pawn(Piece.ColorEnum.BLACK, true);
-                        }
-                        else
-                        {
-                            _boardPieces[row, col] = new Pawn(Piece.ColorEnum.BLACK, false);
-                        }
+                        _boardPieces[row, col] = new Pawn(Piece.ColorEnum.BLACK);
                     }
                     else if (pieces[contList] == "PAWH")
                     {
-                        if (row == 6)
-                        {
-                            _boardPieces[row, col] = new Pawn(Piece.ColorEnum.WHITE, true);
-                        }
-                        else
-                        {
-                            _boardPieces[row, col] = new Pawn(Piece.ColorEnum.WHITE, false);
-                        }
+                        _boardPieces[row, col] = new Pawn(Piece.ColorEnum.WHITE);
                     }
                     contList++;
                 }
