@@ -59,7 +59,7 @@
         {
             $matchesBL = new Matches_Rules();
             $boardStatusBL = new BoardStatus_Rules();
-            $board = "0,KNBL,BIBL,QUBL,KIBL,BIBL,KNBL,ROBL_PAWH,PABL,PABL,PABL,PABL,PABL,PABL,PABL_0,0,0,0,0,0,0,0_0,0,0,0,0,0,0,0_0,0,0,0,0,0,0,0_0,0,0,0,0,0,0,0_PAWH,PAWH,PAWH,PAWH,PAWH,PAWH,PAWH,PAWH_ROWH,KNWH,BIWH,QUWH,KIWH,BIWH,KNWH,ROWH";
+            $board = "ROBL,KNBL,BIBL,QUBL,KIBL,BIBL,KNBL,ROBL_PABL,PABL,PABL,PABL,PABL,PABL,PABL,PABL_0,0,0,0,0,0,0,0_0,0,0,0,0,0,0,0_0,0,0,0,0,0,0,0_0,0,0,0,0,0,0,0_PAWH,PAWH,PAWH,PAWH,PAWH,PAWH,PAWH,PAWH_ROWH,KNWH,BIWH,QUWH,KIWH,BIWH,KNWH,ROWH";
             $matchesBL->toSet($_SESSION["title"], $_SESSION["whitePlayer"], $_SESSION["blackPlayer"]);
             $boardStatusBL->toSet($board, $_SESSION['turn']);
 
