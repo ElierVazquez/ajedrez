@@ -335,7 +335,13 @@ tr {
 .boxes {
     border: 1px solid black;
     height: 12px;
+    color: black;
+    text-decoration: none;
+}
 
+.boxes a {
+    color: black;
+    text-decoration: none;
 }
 
 thead {
@@ -540,7 +546,7 @@ thead {
 #game_info {
     background-color: #333333cc;
     width: 20vw;
-    height: 20vh;
+    height: 9vh;
     left: 1vw;
     top: 15vh;
     position: absolute;
@@ -550,7 +556,7 @@ thead {
 
 #game_info h3 {
     color: burlywood;
-    margin-top: 1vh;
+    margin: 1vh 0;
 }
 
 #game_info p {

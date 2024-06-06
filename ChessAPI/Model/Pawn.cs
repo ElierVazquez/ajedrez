@@ -70,11 +70,7 @@ namespace ChessAPI.Model
         {
             bool result = false;
 
-            if ((board[movement.toRow,movement.toColumn]==null) &&
-                (movement.RowDistance() == 2) && 
-                (movement.IsSameColumn()) &&
-                ((movement.fromRow==1) || (movement.fromRow==6))
-                )
+            if ((board[movement.toRow,movement.toColumn]==null) && (movement.RowDistance() == 2) && movement.IsSameColumn() && ((movement.fromRow==1) || (movement.fromRow==6)))
             {
                 if (this._color == ColorEnum.WHITE)
                     result = board[5, movement.toColumn] == null;

@@ -138,7 +138,7 @@ namespace ChessAPI.Model
 
         }
 
-        public Move ValidateMove(int fromColumn, int fromRow, int toColumn, int toRow, int turn)
+        public Move ValidateMove(int fromColumn, int fromRow, int toColumn, int toRow, int turn, int promotion)
         {
             Movement move = new Movement(fromColumn, fromRow, toColumn, toRow);
             Piece piece = _boardPieces[fromRow, fromColumn];
@@ -161,6 +161,8 @@ namespace ChessAPI.Model
                         _boardPieces[toRow, toColumn] = _boardPieces[fromRow, fromColumn];
                         _boardPieces[fromRow, fromColumn] = null;
 
+                        PromotePawnControl(toRow, toColumn, promotion);
+
                         return new Move(true, GetBoardState(), "OK");
                     }
                 }
@@ -170,6 +172,34 @@ namespace ChessAPI.Model
             catch (Exception ex)
             {
                 return new Move(false, GetBoardState(), ex.Message);
+            }
+        }
+
+        public void PromotePawnControl(int row, int column, int promotion)
+        {
+            if (_boardPieces[row, column].GetScore() == PieceValues.PawnPieceValue)
+            {
+                if ((_boardPieces[row, column]._color == Piece.ColorEnum.WHITE && row == 0) || (_boardPieces[row, column]._color == Piece.ColorEnum.BLACK && row == 7))
+                {
+                    _boardPieces[row, column] = ChoosePromotion(_boardPieces[row, column]._color, promotion);
+                }
+            }
+        }
+
+        private Piece ChoosePromotion(Piece.ColorEnum color, int promotion)
+        {
+            switch (promotion)
+            {
+                case 1:
+                    return new Queen(color);
+                case 2:
+                    return new Knight(color);
+                case 3:
+                    return new Rook(color);
+                case 4:
+                    return new Bishop(color);
+                default:
+                    return new Pawn(color);
             }
         }
 

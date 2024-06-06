@@ -33,16 +33,6 @@ primary key(ID,IDGame),
 FOREIGN KEY (IDGame) REFERENCES T_Matches(ID)
 );
 
-DELIMITER $$
-CREATE TRIGGER insert_new_status
-AFTER INSERT ON T_Matches
-FOR EACH ROW
-BEGIN
-    INSERT INTO T_Board_Status (IDGame, board, turn) values (new.ID, "ROBL,KNBL,BIBL,QUBL,KIBL,BIBL,KNBL,ROBL_PABL,PABL,PABL,PABL,PABL,PABL,PABL,PABL_0,0,0,0,0,0,0,0_0,0,0,0,0,0,0,0_0,0,0,0,0,0,0,0_0,0,0,0,0,0,0,0_PAWH,PAWH,PAWH,PAWH,PAWH,PAWH,PAWH,PAWH_ROWH,KNWH,BIWH,QUWH,KIWH,BIWH,KNWH,ROWH", 0);
-END $$
-DELIMITER ;
-
-
 /* INSERT INTO T_Players(name, email, password, premium) 
     values
 ("Elier", "eliervazquezdelvalle2002@gmail.com", "12345678", true),

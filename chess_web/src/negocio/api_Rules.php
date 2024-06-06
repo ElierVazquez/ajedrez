@@ -25,10 +25,10 @@
             return $result;
         }
 
-        function toMove($board, $fromColumn, $fromRow, $toColumn, $toRow, $turn)
+        function toMove($board, $fromColumn, $fromRow, $toColumn, $toRow, $turn, $promotion)
         {
             $apiDAL = new api_DataAccess();
-            $result = $apiDAL->toMove($board, $fromColumn, $fromRow, $toColumn, $toRow, $turn);
+            $result = $apiDAL->toMove($board, $fromColumn, $fromRow, $toColumn, $toRow, $turn, $promotion);
 
             return $result;
         }

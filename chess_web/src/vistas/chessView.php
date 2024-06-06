@@ -59,7 +59,7 @@
         {
             $matchesBL = new Matches_Rules();
             $boardStatusBL = new BoardStatus_Rules();
-            $board = "ROBL,KNBL,BIBL,QUBL,KIBL,BIBL,KNBL,ROBL_PABL,PABL,PABL,PABL,PABL,PABL,PABL,PABL_0,0,0,0,0,0,0,0_0,0,0,0,0,0,0,0_0,0,0,0,0,0,0,0_0,0,0,0,0,0,0,0_PAWH,PAWH,PAWH,PAWH,PAWH,PAWH,PAWH,PAWH_ROWH,KNWH,BIWH,QUWH,KIWH,BIWH,KNWH,ROWH";
+            $board = "0,KNBL,BIBL,QUBL,KIBL,BIBL,KNBL,ROBL_PAWH,PABL,PABL,PABL,PABL,PABL,PABL,PABL_0,0,0,0,0,0,0,0_0,0,0,0,0,0,0,0_0,0,0,0,0,0,0,0_0,0,0,0,0,0,0,0_PAWH,PAWH,PAWH,PAWH,PAWH,PAWH,PAWH,PAWH_ROWH,KNWH,BIWH,QUWH,KIWH,BIWH,KNWH,ROWH";
             $matchesBL->toSet($_SESSION["title"], $_SESSION["whitePlayer"], $_SESSION["blackPlayer"]);
             $boardStatusBL->toSet($board, $_SESSION['turn']);
 
@@ -249,11 +249,11 @@
             );
 
             $rowsGame = explode("_", $board);
-            $game = array();
+            $_SESSION["game"] = array();
 
             for ($i = 0; $i < count($rowsGame); $i++)
             {
-                $game[$i] = explode(",", $rowsGame[$i]);
+                $_SESSION["game"][$i] = explode(",", $rowsGame[$i]);
             }
 
             echo "<div id=\"game\">";
@@ -262,7 +262,7 @@
             {
                 for ($column = 0; $column < 8; $column++)
                 {
-                    switch ($game[$row][$column])
+                    switch ($_SESSION["game"][$row][$column])
                     {
                         case "PAWH":
                             $contPieces["PAWH"]++;
@@ -314,7 +314,7 @@
 
             AssembleBlackCatches($boardPieces, $contPieces);
 
-            AssembleBoard($game);
+            AssembleBoard($_SESSION["game"]);
 
             AssembleWhiteCatches($boardPieces, $contPieces);
 
@@ -325,7 +325,7 @@
                 echo "<h3>Movement</h3>";
                 echo "<form action=\"chessView.php\" method=\"post\">";
                     echo "<label for=\"fr\">From row: </label>";
-                    echo "<input type=\"text\" id=\"fr\" name=\"fromRow\">";
+                    echo "<input type=\"text\" id=\"fr\" name=\"fromRow\" autofocus>";
                     echo "<br />";
 
                     echo "<label for=\"fc\">From column: </label>";
@@ -373,9 +373,14 @@
 
             try
             {
-                $move = $apiBL->toMove($board, $fromColumn, $fromRow, $toColumn, $toRow, $_SESSION["turn"]+1); 
+                if (($_SESSION["game"][$fromRow][$fromColumn] == "PABL" && $toRow == 7) || ($_SESSION["game"][$fromRow][$fromColumn] == "PAWH" && $toRow == 0))
+                {
+                    $_POST["promotion"] = 1;
+                }
+
+                $move = $apiBL->toMove($board, $fromColumn, $fromRow, $toColumn, $toRow, $_SESSION["turn"]+1, isset($_POST["promotion"])? $_POST["promotion"] : 0); 
                 
-                if ($move["valid"] == true)
+                if (isset($move["valid"]) && $move["valid"] == true)
                 {
                     $_SESSION["turn"] = $_SESSION["turn"] + 1;
                     $boardStatusBL->toSet($move["board"], $_SESSION["turn"]);
@@ -386,7 +391,6 @@
             }
             catch (Exception $ex)
             {
-                $_SESSION["turn"] = $_SESSION["turn"] - 1;
                 return $board;
             }
 
@@ -404,11 +408,11 @@
             <?php
                 if ($_SESSION["turn"] % 2 == 0) 
                 {
-                    print($_SESSION["playerWH"]);
+                    print($_SESSION["playerWH"]." (White)");
                 }
                 else
                 {
-                    print($_SESSION["playerBL"]);
+                    print($_SESSION["playerBL"]." (Black)");
                 }
             ?>
         </p>
