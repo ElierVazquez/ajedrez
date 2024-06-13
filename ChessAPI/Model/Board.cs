@@ -143,11 +143,11 @@ namespace ChessAPI.Model
             Movement move = new Movement(fromColumn, fromRow, toColumn, toRow);
             Piece piece = _boardPieces[fromRow, fromColumn];
 
-            if (turn % 2 != 0 && piece._color == Piece.ColorEnum.BLACK)
+            if (turn % 2 == 0 && piece._color == Piece.ColorEnum.BLACK)
             {
                 return new Move(false, GetBoardState(), "Invalid Movement");
             }
-            else if (turn % 2 == 0 && piece._color == Piece.ColorEnum.WHITE)
+            else if (turn % 2 != 0 && piece._color == Piece.ColorEnum.WHITE)
             {
                 return new Move(false, GetBoardState(), "Invalid Movement");
             }

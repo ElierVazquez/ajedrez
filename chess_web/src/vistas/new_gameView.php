@@ -46,6 +46,8 @@
         require("../negocio/players_Rules.php");
         $playersBL = new Players_Rules();
         $playersInfo = $playersBL->toGet();
+
+        $_SESSION["turn"] = 0;
     ?>
     <form action="chessView.php" method="post" id="form">
         <label for="whitePlayer">White player</label>

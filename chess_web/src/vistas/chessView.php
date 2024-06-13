@@ -57,11 +57,13 @@
         
         if (!isset($_SESSION["turn"]) || $_SESSION["turn"] == 0)
         {
+            $_SESSION["turn"]++;
+
             $matchesBL = new Matches_Rules();
             $boardStatusBL = new BoardStatus_Rules();
             $board = "ROBL,KNBL,BIBL,QUBL,KIBL,BIBL,KNBL,ROBL_PABL,PABL,PABL,PABL,PABL,PABL,PABL,PABL_0,0,0,0,0,0,0,0_0,0,0,0,0,0,0,0_0,0,0,0,0,0,0,0_0,0,0,0,0,0,0,0_PAWH,PAWH,PAWH,PAWH,PAWH,PAWH,PAWH,PAWH_ROWH,KNWH,BIWH,QUWH,KIWH,BIWH,KNWH,ROWH";
             $matchesBL->toSet($_SESSION["title"], $_SESSION["whitePlayer"], $_SESSION["blackPlayer"]);
-            $boardStatusBL->toSet($board, $_SESSION['turn']);
+            $boardStatusBL->toSet($board, $_SESSION["turn"]);
 
             $player = new Players_Rules();
             $playersInfo = $player->toGet();
@@ -382,7 +384,7 @@
                 
                 if (isset($move["valid"]) && $move["valid"] == true)
                 {
-                    $_SESSION["turn"] = $_SESSION["turn"] + 1;
+                    $_SESSION["turn"]++;
                     $boardStatusBL->toSet($move["board"], $_SESSION["turn"]);
                     $board = $move["board"];
                     
@@ -406,7 +408,7 @@
         <p>
             <b>Turn of </b>
             <?php
-                if ($_SESSION["turn"] % 2 == 0) 
+                if ($_SESSION["turn"] % 2 != 0) 
                 {
                     print($_SESSION["playerWH"]." (White)");
                 }
